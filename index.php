@@ -1,6 +1,8 @@
 <?php
 // Las cosas
 
-print_r(PDO::getAvailableDrivers());
+print_r(
+    PDO::getAvailableDrivers()
+);
 
 ?>
