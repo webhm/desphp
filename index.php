@@ -9,7 +9,7 @@ $tns = "
 //pass:: Ex ->  12345
 
 try {
-    $conn = new PDO("oci:dbname=" . $tns, 'mchang', '1501508480');
+    $conn = new PDO("odbc:dbname=" . $tns, 'mchang', '1501508480');
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo 'connect Successfull';
 } catch (PDOException $e) {
